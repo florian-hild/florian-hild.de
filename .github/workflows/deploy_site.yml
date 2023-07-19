@@ -17,6 +17,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@main
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: Setup python3
         uses: actions/setup-python@main
