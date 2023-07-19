@@ -1,0 +1,40 @@
+---
+
+# ------------------------------------------------------------------------------
+# Author     : Florian Hild
+# Created    : 20-07-2023
+# Description: GitHub Action to deploy mkdocs build to hetzner webhosting site
+# ------------------------------------------------------------------------------
+
+name: Deploy site
+
+'on':
+  push:
+    branches:
+      # - main
+      - develope
+
+jobs:
+  deploy-to-hetzner:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@latest
+
+      - name: Setup python3
+        uses: actions/setup-python@latest
+
+      - name: Install requirements
+        run: python3 -m pip install -r requirements.txt
+
+      - name: Build site
+        run: mkdocs build
+
+      - name: Debug
+        run: |
+          pwd
+          ls -l
+
+...
+
+
