@@ -37,7 +37,7 @@ jobs:
 
       - name: Test
         if: steps.build.outputs.exit_code == 0
-        run: echo "Build: OK"
+        run: 'echo "Build: OK"'
 
       - name: Debug
         run: |
