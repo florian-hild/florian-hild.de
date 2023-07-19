@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses actions/checkout@latest
+        uses: actions/checkout@latest
 
       - name: Setup python3
         uses: actions/setup-python@latest
