@@ -8,7 +8,8 @@ Hacker aufgepasst, ich zeige euch heute wie ihr auf einem Linux System, ohne zus
 
 Es gibt unter Linux sogenannte „pseudo-devices“, diese liegen meist unter /dev. Dahinter verbirgt sich kein Gerätetreiber, sondern nur eine Systemschnittstelle.
 
-Wir machen uns das pseudo-device /dev/tcp zunutze, um im Netzwerk nach offenen Ports zu suchen. Dieses lässt sich mit folgender Syntax verwenden:
+We can use the pseudo-device /dev/tcp, to make a tcp request on a specific port.
+Dieses lässt sich mit folgender Syntax verwenden:
 
 ```bash
 /dev/tcp/[host]/[port]
