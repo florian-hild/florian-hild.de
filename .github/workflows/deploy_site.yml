@@ -10,9 +10,6 @@ name: Deploy site
 
 'on':
   push:
-    branches:
-      # - main
-      - develope
 
 jobs:
   deploy-to-hetzner:
