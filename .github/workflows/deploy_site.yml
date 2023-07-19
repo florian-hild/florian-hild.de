@@ -23,12 +23,21 @@ jobs:
 
       - name: Setup python3
         uses: actions/setup-python@main
+        with:
+          python-version: '3.x'
 
       - name: Install requirements
-        run: python3 -m pip install -r requirements.txt
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install -r requirements.txt
 
       - name: Build site
+        id: build
         run: mkdocs build
+
+      - name: Test
+        if: steps.build.outputs.exit_code == 0
+        run: echo "Build: OK"
 
       - name: Debug
         run: |
