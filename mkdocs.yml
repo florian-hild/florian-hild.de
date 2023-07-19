@@ -3,6 +3,7 @@ site_url: https://florian-hild.de/
 site_author: Florian Hild
 site_description: "A personal notes blog"
 copyright: "This is a personal notes blog. CC BY-SA 4.0 Florian Hild"
+repo_name: GitHub
 
 theme:
   name: null
@@ -10,11 +11,11 @@ theme:
   colorscheme: github
   highlightjs: true
   hljs_languages:
-        - yaml
-        - python
-        - dos
-  disable_nav_previous_next: true
+    - yaml
+    - python
+    - dos
   collapse_toc: true
+  disable_nav_previous_next: true
 
 nav:
   - Home: index.md
@@ -28,14 +29,14 @@ markdown_extensions:
   - pymdownx.superfences
   - attr_list
   - toc:
-        permalink: "#"
+      permalink: "#"
 
 plugins:
   - git-revision-date
   - rss:
-        match_path: "blog/.*"
-        date_from_meta:
-            as_creation: "date_published"
+      match_path: "blog/.*"
+      date_from_meta:
+        as_creation: "date_published"
 
 extra:
   include_search: false

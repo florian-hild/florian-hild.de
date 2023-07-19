@@ -13,5 +13,6 @@
         "python.linting.pylintArgs": [
             "--indent-string=\"  \""
         ],
+        "ansible.python.interpreterPath": "/Users/northdakota/python_venv/florian-hild.de/.venv/bin/python3",
     }
 }
