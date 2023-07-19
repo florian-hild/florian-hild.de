@@ -1,3 +1,5 @@
+[![Deploy site](https://github.com/florian-hild/florian-hild.de/actions/workflows/deploy_site.yml/badge.svg?branch=main)](https://github.com/florian-hild/florian-hild.de/actions/workflows/deploy_site.yml)
+
 Florian-hild.de website with mkdocs
 =========
 
