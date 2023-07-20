@@ -10,25 +10,34 @@ name: Deploy site
 
 'on':
   push:
-    branches:
-      # - main
-      - develope
 
 jobs:
   deploy-to-hetzner:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@latest
+        uses: actions/checkout@main
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: Setup python3
-        uses: actions/setup-python@latest
+        uses: actions/setup-python@main
+        with:
+          python-version: '3.x'
 
       - name: Install requirements
-        run: python3 -m pip install -r requirements.txt
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install -r requirements.txt
 
       - name: Build site
+        id: build
         run: mkdocs build
+
+      - name: Test
+        if: steps.build.outputs.exit_code == 0
+        run: 'echo "Build: OK"'
 
       - name: Debug
         run: |
