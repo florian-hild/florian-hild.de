@@ -1,6 +1,6 @@
 ---
-title: Bash tcp port scan
-description: Scan tcp port with pseudo-device
+title: Bash TCP port scan
+description: Scan TCP port with pseudo-device
 author: Florian
 publishDate: 2021-03-20
 tags:
