@@ -1,6 +1,5 @@
-[![Deploy site](https://github.com/florian-hild/florian-hild.de/actions/workflows/deploy_site.yml/badge.svg?branch=main)](https://github.com/florian-hild/florian-hild.de/actions/workflows/deploy_site.yml)
 
-Florian-hild.de website with mkdocs
+Florian-hild.de website with hugo
 =========
 
 
@@ -9,29 +8,23 @@ Development notes:
 
 #### Setup dev environment:
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python3 -m pip install --upgrade pip
-python3 -m pip install -r requirements.txt
+
 ```
 
-#### Test webiste:
+#### Test webiste locally:
 ```bash
-mkdocs serve
+hugo server --noHTTPCache
 ```
 
 #### Build website:
 ```bash
-mkdocs build
+hugo
 ```
 
 Readings:
 ------------
 
-- [https://www.mkdocs.org/](https://www.mkdocs.org/)
-- [https://sourcefoundry.org/cinder/](https://sourcefoundry.org/cinder/)
-- [https://github.com/Sieboldianus/du.nkel.dev](https://github.com/Sieboldianus/du.nkel.dev)
-- [https://framagit.org/Sieboldianus/du.nkel.dev/](https://framagit.org/Sieboldianus/du.nkel.dev/)
+-
 
 License:
 ------------
