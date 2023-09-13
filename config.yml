@@ -37,7 +37,13 @@ params:
     share:
       enable: false
     comment:
-      enable: false
+      enable: true
+      gitalk:
+        enable: true
+        owner: florian-hild
+        repo: florian-hild.de
+        clientId: d20a39a57f283190f5b4
+        clientSecret: 1e713a9b7a4736dd8a163a7399a9ba6376828958
     seo:
       publisher:
         name: Florian Hild
