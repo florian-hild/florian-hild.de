@@ -1,9 +1,29 @@
-.venv
-__pycache__
-build
-dist
-mkdocs_cinder.egg-info/
-.vscode
-site/*
-cinder/__pycache__/*
+# Generated files by hugo
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# Executable may be added to repository
+hugo.exe
+hugo.darwin
+hugo.linux
+
+# Temporary lock file while building
+.hugo_build.lock
+
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+.cache/
+known_hosts
+nohup.out
+$RECYCLE.BIN/
+[Dd]esktop.ini
+*~
