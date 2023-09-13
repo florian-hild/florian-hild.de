@@ -50,8 +50,8 @@ for i in {1..20}; do timeout 0.3 bash -c "echo >/dev/tcp/10.0.0.${i}/22" && echo
 10.0.0.20: closed
 {{< /highlight >}}
 
-### References:
+### References
 - [Advanced Bash-Scripting Guide: Chapter 29. /dev and /proc](https://tldp.org/LDP/abs/html/devref1.html), tldp.org.
-- [TCP Port Scanner in Bash](https://catonmat.net/tcp-port-scanner-in-bash), catonmat.net
-- [3.6 Redirections](https://www.gnu.org/software/bash/manual/html_node/Redirections.html), gnu.org
-- [Writing a pseudo-device driver on Linux](https://lyngvaer.no/log/writing-pseudo-device-driver), lyngvaer.no
+- [TCP Port Scanner in Bash](https://catonmat.net/tcp-port-scanner-in-bash), catonmat.net.
+- [3.6 Redirections](https://www.gnu.org/software/bash/manual/html_node/Redirections.html), gnu.org.
+- [Writing a pseudo-device driver on Linux](https://lyngvaer.no/log/writing-pseudo-device-driver), lyngvaer.no.
