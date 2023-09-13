@@ -1,0 +1,79 @@
+title: Blog - Florian Hild
+baseURL: https://florian-hild.de
+defaultContentLanguage: en
+languageCode: en-us
+paginate: 12
+theme: loveit
+
+params:
+  defaultTheme: auto
+  fingerprint: sha256
+  dateFormat: "2, January, 2006"
+  title: Blog - Florian Hild
+  description: Blog
+  author: Florian
+  list:
+    dateFormat: "2006-01-02"
+  header:
+    desktopMode: normal
+    mobileMode: auto
+    title:
+      name: Blog - Florian Hild
+      typeit: true
+  footer:
+    since: 2021
+  app:
+    title: Blog - Florian Hild
+  search:
+    enable: false
+    type: lunr
+  home:
+    profile:
+      enable: false
+    posts:
+      enable: true
+      paginate: 6
+  page:
+    share:
+      enable: false
+    comment:
+      enable: false
+    seo:
+      publisher:
+        name: Florian Hild
+  typeit:
+    speed: 120
+
+menu:
+  main:
+    - name: Posts
+      pageRef: /posts/
+      weight: 10
+    - name: Tags
+      pageRef: /tags/
+      weight: 20
+
+permalinks:
+  page:
+    posts: /articles/:year/:title
+
+taxonomies:
+  tag: tags
+  category: categories
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: true
+    hl_inline: false
+    lineNoStart: 1
+    lineNos: true
+    lineNumbersInTable: true
+    noClasses: true
+    noHl: false
+    style: onedark
+    tabWidth: 2
